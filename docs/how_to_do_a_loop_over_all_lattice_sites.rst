@@ -7,5 +7,5 @@ How to loop over all lattice sites
         # commands for each lattice site go here
 
 
-*Note*: Make sure to call the ``PixelTracker`` plugin from either the *.xml* or the *.py* file.
+*Note*: Make sure to load the ``PixelTracker`` plugin from either the *.xml* or the *.py* file.
 

@@ -1,8 +1,8 @@
 How to share data between steppables
 ======================================================================================
 
-All steppables, by default, can share data with each other by accessing a global Python dictionary as an
-attribute ``shared_steppable_vars``:
+All steppables, by default, can share data with each other by accessing a global Python dictionary
+``shared_steppable_vars`` as a steppable attribute:
 
 .. code-block:: Python
 

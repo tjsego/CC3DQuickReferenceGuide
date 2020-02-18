@@ -1,4 +1,4 @@
-How to create extra fields:
+How to create extra fields
 ======================================================================================
 
 .. code-block:: Python
@@ -11,6 +11,17 @@ How to create extra fields:
             self.create_vector_field_py("vFieldP") # pixel-based vector field
             self.create_scalar_field_cell_level_py("sFieldC") # cell-based scalar field
             self.create_vector_field_cell_level_py("vFieldC") # cell-based vector field
+            # Create extra fields that use automatic tracking of cell attributes
+            self.track_cell_level_scalar_attribute(field_name='ID2_FIELD',
+                                                   attribute_name='id2')
+            self.track_cell_level_vector_attribute(field_name='COM_VECTOR_FIELD',
+                                                   attribute_name='com_vector')
+
+        def start(self):
+            # Initialize attributes in cell dictionary for automatic tracking fields
+            for cell in self.cell_list:
+                cell.dict['id2'] = cell.id ** 2
+                cell.dict['com_vector'] = [cell.xCOM, cell.yCOM, 0.0]
 
         def step(self, mcs):
             # access extra fields by names passed to instantiation methods in __init__
@@ -25,6 +36,10 @@ How to create extra fields:
             cell = self.cell_field[0, 1, 2]
             scalar_field_cell[cell] = cell.id * 2
             vector_field_cell[cell] = [0.0, 1.0, 2.0]
+            # Update attributes in cell dictionary for automatic tracking fields
+            for cell in self.cell_list:
+                cell.dict['id2'] = cell.id ** 2
+                cell.dict['com_vector'] = [cell.xCOM, cell.yCOM, 0.0]
 
 *Note*: Extra fields do not necessarily have to be created inside ``__init__``, though full functionality
 associated with fields requires it.

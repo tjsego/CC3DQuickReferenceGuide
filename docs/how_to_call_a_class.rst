@@ -1,4 +1,4 @@
-How to call a CC3D steppable class
+How to load a CC3D steppable class
 ======================================================================================
 In the main Python file ``<mainFile.py>``, register custom steppables by following the procedure
 shown between the first and last lines:

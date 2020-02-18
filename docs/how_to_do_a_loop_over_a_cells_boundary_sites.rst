@@ -9,5 +9,5 @@ How to loop over a cell's boundary sites
         # commands for each cell boundary pixel (pt) go here
 
 
-*Note*: Make sure to call the ``BoundaryPixelTracker`` plugin from either the *.xml* or the *.py* file.
+*Note*: Make sure to load the ``BoundaryPixelTracker`` plugin from either the *.xml* or the *.py* file.
 
