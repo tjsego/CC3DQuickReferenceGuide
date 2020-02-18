@@ -1,4 +1,4 @@
-How to loop over a cells' neighbors
+How to loop over a cell's neighbors
 ======================================================================================
 
 .. code-block:: python

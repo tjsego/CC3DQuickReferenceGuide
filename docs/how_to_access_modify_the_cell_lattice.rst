@@ -13,7 +13,4 @@ How to access/modify the cell lattice
     self.cell_field[10:14, 10:14, 0] = self.new_cell(self.CONDENSING)
 
 
-*Note*: Integers specified for all cell types ``Type`` defined in the *.xml* file are assigned to
-all steppables as attributes ``TYPE`` (*e.g.*, for a type with name ``Condensing`` and integer = 2,
-``self.CONDENSING = 2`` for all steppables).
 
