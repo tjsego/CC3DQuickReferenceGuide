@@ -12,6 +12,7 @@ Python for CC3D v4.1.1 - Quick Reference Guide
     how_to_do_a_loop_over_all_cells
     how_to_do_a_loop_over_the_cells_neighbors
     how_to_do_a_loop_over_all_lattice_sites
+    how_to_do_a_loop_over_cell_and_medium_sites
     how_to_do_a_loop_over_a_cells_boundary_sites
     how_to_attach_access_modify_a_dictionary_to_a_cell
     how_to_simulate_mitosis
