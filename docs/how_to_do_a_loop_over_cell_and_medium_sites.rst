@@ -3,8 +3,6 @@ How to do a loop over cell and medium sites
 
 .. code-block:: python
 
-    from cc3d.cpp import CompuCell3D
-
     # Loop over all pixels of cell with id = 1
     cell_1 = self.fetch_cell_by_id(1)
     for ptd in self.get_cell_pixel_list(cell_1)
